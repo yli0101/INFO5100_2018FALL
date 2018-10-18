@@ -12,6 +12,9 @@ public class Assignment4 {
 	 * s = "leetcode" return 0. 
 	 * s = "loveleetcode" return 2.
 	 */
+	
+	//score 1.5/2
+	//your code will return 0 with this question "loveleetcode" 
     public int firstUniqChar(String s) {
     	if(s == null || s.length() == 0)
     		return -1;
@@ -35,6 +38,7 @@ public class Assignment4 {
      * Input: 38 Output: 2
      * Explanation: The process is like: 3 + 8 = 11, 1 + 1 = 2. Since 2 has only one digit, return it.
      */
+	//score 2/2
     public int addDigits(int n) {
     	if(n < 10)
     		return n;
@@ -55,6 +59,8 @@ public class Assignment4 {
      *  Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements.
      *  Input: [0,1,0,3,12] Output: [1,3,12,0,0]
      */
+	
+	//score 2/2
     public void moveZeroes(int[] nums) {
     	if(nums.length < 1)
     		return;
@@ -80,6 +86,9 @@ public class Assignment4 {
      * Given a string s, find the longest palindromic substring in s. You may assume that the maximum length of s is 1000.
      * Input: "babad" Output: "bab" Note: "aba" is also a valid answer.
      */
+	
+	//1.5/2
+	//test case "ccc" need to return "ccc", but your code will "cc"
 	public String longestPalindrome(String s) {
 		if(s.length() == 0 || s.length() == 1)
 			return s;
@@ -114,6 +123,7 @@ public class Assignment4 {
   								 [8,5,2],
   								  [9,6,3] ],
      */
+	//score 2/2
     public int[][] rotate(int[][] matrix) {
     	int l = matrix.length;
     	if(l == 0 || l == 1)
